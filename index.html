@@ -6,7 +6,14 @@
     </head>
     <style>
         body {
+            color: white;
+            mix-blend-mode: exclusion;
             font-family: "Open Sans", Arial, Helvetica, sans-serif;
+            background-image: url("background.jpg");
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
         }
         .title {
             height: 65%;
@@ -24,16 +31,18 @@
             justify-content: space-between;
         }
         .link {
+            color: white;
             padding: 5mm;
             background-color: transparent;
-            border: 1mm solid black;
+            border: 1mm solid white;
             width: 65mm;
             font-size: 1.5vw;
             border-radius: 1mm;
             transition-duration: 0.5s;
         }
         .link:hover {
-            background-color: gray;
+            color: black;
+            background-color: white;
         }
     </style>
     <body>
