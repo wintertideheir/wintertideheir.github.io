@@ -8,7 +8,11 @@
         body {
             color: white;
             mix-blend-mode: exclusion;
+
             font-family: "Open Sans", Arial, Helvetica, sans-serif;
+
+            box-sizing: border-box;
+
             background-image: url("background.jpg");
             background-attachment: fixed;
             background-position: center;
@@ -16,29 +20,34 @@
             background-size: cover;
         }
         .title {
+            margin: auto;
             height: 65%;
-            width:  100%;
+
             display: flex;
             justify-content: center;
             align-items: center;
+
             text-transform: uppercase;
             font-size: 5vw;
         }
         .links {
             margin: auto;
             width: 65%;
+
             display: flex;
             justify-content: space-between;
         }
         .links a {
-            color: white;
             padding: 5mm;
+            width: 65mm;
+
             background-color: transparent;
             border: 1mm solid white;
-            width: 65mm;
+            border-radius: 1mm;
+
             font-size: 1.5vw;
             text-align: center;
-            border-radius: 1mm;
+
             transition-duration: 0.5s;
         }
         .links a:hover {
