@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
+/* Fit the body to the display. */
 html, body {
     width: 100%;
     height: 100%;
@@ -7,36 +8,45 @@ html, body {
 }
 
 body {
+    /* Set the default color to white and set a high-constrast blending mode. */
     color: white;
     mix-blend-mode: exclusion;
 
+    /* Set the font family. */
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
 
+    /* Enable a more intuitive box sizing. */
     box-sizing: border-box;
 
+    /* Set the background image. */
     background-image: url("background.jpg");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
+    /* Setup a flex box for the sticky header and footer. */
     display: flex;
     flex-direction: column;
 }
 
+/* Match link and text color, and remove default styling. */
 a {
     color:inherit;
     text-decoration: none;
 }
 
+/* Expand content to enable a sticky header and footer. */
 .content {
     flex-grow: 1;
 }
 
 .header,
 .footer {
+    /* Prevent growth in the flex box. */
     flex-shrink: 0;
 
+    /* Center contents in a flex box. */
     display: flex;
     justify-content: center;
     align-items: center;
