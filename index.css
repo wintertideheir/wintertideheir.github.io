@@ -35,6 +35,12 @@ a {
     text-decoration: none;
 }
 
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Expand content to enable a sticky header and footer. */
 .content {
     background-color: rgba(0, 0, 0, 0.5);
@@ -49,11 +55,6 @@ a {
 
     /* Prevent growth in the flex box. */
     flex-shrink: 0;
-
-    /* Center contents in a flex box. */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .title {
