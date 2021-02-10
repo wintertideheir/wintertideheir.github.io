@@ -58,7 +58,21 @@ a {
     margin-left: 1vw;
     margin-right: 1vw;
 
-    font-size: 5vw;
+    font-size: min(5vw, 60pt);
 
     text-transform: uppercase;
+}
+
+.icon-link {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+}
+
+.icon-link img {
+    width: 5vw;
+    height: 5vw;
+    max-width: 10mm;
+    max-height: 10mm;
 }
