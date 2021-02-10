@@ -8,9 +8,8 @@ html, body {
 }
 
 body {
-    /* Set the default color to white and set a high-constrast blending mode. */
+    /* Set the default color to white. */
     color: white;
-    mix-blend-mode: exclusion;
 
     /* Set the font family. */
     font-family: "Open Sans", Arial, Helvetica, sans-serif;
@@ -38,11 +37,16 @@ a {
 
 /* Expand content to enable a sticky header and footer. */
 .content {
+    background-color: rgba(0, 0, 0, 0.5);
+
     flex-grow: 1;
 }
 
 .header,
 .footer {
+    /* Set a high-constrast blending mode. */
+    mix-blend-mode: exclusion;
+
     /* Prevent growth in the flex box. */
     flex-shrink: 0;
 
