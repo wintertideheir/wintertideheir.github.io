@@ -1,15 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
 
-html {
+html, body {
+    width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0%;
 }
 
 body {
-    height: 100%;
-    margin: 0;
-    min-width: 120mm;
-            
     color: white;
     mix-blend-mode: exclusion;
 
@@ -22,6 +19,9 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -29,32 +29,26 @@ a {
     text-decoration: none;
 }
 
-.title {
-    width: 100%;
-    height: 50%;
+.content {
+    flex-grow: 1;
+}
+
+.header,
+.footer {
+    flex-shrink: 0;
 
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.title {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+
+    font-size: 5vw;
 
     text-transform: uppercase;
-    font-size: 5vw;
-}
-
-.links {
-    margin: auto;
-
-    display: flex;
-    justify-content: center;
-}
-.external a {
-    margin: 1mm;
-    margin-top: 5mm;
-
-    font-size: 1.5em;
-}
-
-.internal a:hover {
-    color: black;
-    background-color: white;
 }
